@@ -6,6 +6,30 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <header>
+        <h1>Checkout</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="views/explore.html">Explore</a>
+            <a href="views/exhibitions.html">Exhibitions</a>
+            <a href="views/tickets.html">Buy Tickets</a>
+            <a href="views/checkout.html">Checkout</a>
+        </nav>
+    </header>
+
+    <div class="main">
+        <form>
+            <label for="name">Name: (required)</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <label for="email">Email: (required)</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="quantity">Ticket Quantity: (required)</label><br>
+            <input type="number" id="quantity" name="quantity" min="1" required><br><br>
+        
+            <button type="submit">Submit</button>
+        </form>
+    </div>
 </body>
 </html>
