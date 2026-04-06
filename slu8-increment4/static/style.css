@@ -1,0 +1,156 @@
+* {
+    padding: 5px;
+    margin: 5px;
+    background: #ceba98;
+    color:  #000000;
+    font-family: Roboto, Arial, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    line-height: 1.5;
+}
+  
+#logo {
+    width: 18%;
+    display: block;
+}
+  
+nav a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 400;
+    padding: 8px 10px;
+    border: 1px solid transparent;
+    border-radius: 12px;
+}
+  
+nav a:hover {
+    border-color: #941311;
+}
+  
+.active {
+    color:#710c0a;  
+    font-weight: 600; 
+}
+      
+.cta {
+    background: #910e0c;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 12px;
+    color: #e1b9b9;
+}
+
+footer {
+    border-top: 1px solid rgba(245,245,247,.12);
+    padding: 18px 16px;
+    text-align: center;
+    color: rgba(245,245,247,.72);
+}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: fit-content;
+}
+    
+tbody tr:nth-child(even) td {
+    background-color: #e6d8c8;
+  }
+  
+form * {
+    margin: auto;
+    text-align: center;
+}
+  
+
+.container {
+    display: grid; /* Turns this div into a CSS Grid layout */
+    grid-template-areas:   /* Defines the layout structure */
+      'header header'
+      'nav_bar nav_bar'
+      'main main-img'
+      'footer footer';
+}
+
+/* Places each element into the correct area of the grid */
+.header {
+    grid-area: header; 
+}
+.nav_bar {
+    grid-area: nav_bar;
+    display: flex; /* Uses Flexbox for internal layout */
+    justify-content: right;   /* Right aligns the content */
+}
+ 
+.main {
+grid-area: main; 
+}
+.main_img {
+    grid-area: main-img; 
+}
+.footer {
+    grid-area: footer;
+}
+
+
+#readLess, #longIntro {
+    display: none;
+}
+
+#readLess, #readMore {
+    font-style: italic;
+    background-color: #8b6f4b;
+    color: #ffffff;
+}
+
+#purchase_form {
+    display: none; 
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    background-color: #f9f9f9;
+}
+
+#ticket_type {
+    border: 1px solid #85716a;
+}
+
+#ticket_type th, #ticket_type td {
+    border: 1px solid #353030;
+    padding: 10px;
+}
+
+#monthly_schedule {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#monthly_schedule th, #monthly_schedule td {
+    border: 1px solid #353030;
+    padding: 10px;
+    text-align: center;
+}
+
+#monthly_schedule th {
+    background-color: #ceba98;
+}
+
+#monthly_schedule td button {
+    margin-top: 5px;
+    padding: 5px 8px;
+    border-radius: 6px;
+    border: none;
+    background-color: #4d5c3b;
+    color: white;
+    cursor: pointer;
+}
+
+#monthly_schedule td button:hover {
+    background-color: #3e4a30;
+}
+
+
+
+  

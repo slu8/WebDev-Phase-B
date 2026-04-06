@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
+    <script src="../static/script.js" defer></script>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols+2&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse Museum Logo"> 
+        </header>
+
+        <nav class="nav_bar">
+            <a href="../index.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="exhibitions.html">Exhibitions</a>
+            <a href="buytickets.html">Buy Tickets</a>
+        </nav>
+        
+        <main class="main">
+            <h2>Ticket Types</h2>
+            <table id="ticket_type">
+                <thead>
+                    <tr>
+                        <th>Ticket Type</th>
+                        <th>Description</th>
+                        <th>Prices ($)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Adult</td>
+                        <td>General admission for ages 18 and over. Under 18 free of charge</td>
+                        <td>$18</td>
+                    </tr>
+                    <tr>
+                        <td>Student</td>
+                        <td>Student ID required</td>
+                        <td>$10</td>
+                    </tr>
+                    <tr>
+                        <td>Member</td>
+                        <td>Member ID required</td>
+                        <td>$15</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+            <h2>April 2026 Ticket Schedule</h2>
+            <table id="monthly_schedule">
+                <thead>
+                    <tr>
+                        <th>Sun</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>1st <button class="buy_button" data-date="2026-04-01">Buy Now</button></td>
+                        <td>2nd</td>
+                    </tr>
+                    <tr>
+                        <td>3rd</td>
+                        <td>4th <button class="buy_button" data-date="2026-04-04">Buy Now</button></td>
+                        <td>5th <button class="buy_button" data-date="2026-04-05">Buy Now</button></td>
+                        <td>6th <button class="buy_button" data-date="2026-04-06">Buy Now</button></td>
+                        <td>7th <button class="buy_button" data-date="2026-04-07">Buy Now</button></td>
+                        <td>8th <button class="buy_button" data-date="2026-04-08">Buy Now</button></td>
+                        <td>9th</td>
+                    </tr>
+                    <tr>
+                        <td>10th</td>
+                        <td>11th <button class="buy_button" data-date="2026-04-11">Buy Now</button></td>
+                        <td>12th <button class="buy_button" data-date="2026-04-12">Buy Now</button></td>
+                        <td>13th <button class="buy_button" data-date="2026-04-13">Buy Now</button></td>
+                        <td>14th <button class="buy_button" data-date="2026-04-14">Buy Now</button></td>
+                        <td>15th <button class="buy_button" data-date="2026-04-15">Buy Now</button></td>
+                        <td>16th</td>
+                    </tr>
+                    <tr>
+                        <td>17th</td>
+                        <td>18th <button class="buy_button" data-date="2026-04-18">Buy Now</button></td>
+                        <td>19th <button class="buy_button" data-date="2026-04-19">Buy Now</button></td>
+                        <td>20th <button class="buy_button" data-date="2026-04-20">Buy Now</button></td>
+                        <td>21st <button class="buy_button" data-date="2026-04-21">Buy Now</button></td>
+                        <td>22nd <button class="buy_button" data-date="2026-04-22">Buy Now</button></td>
+                        <td>23rd</td>
+                    </tr>
+                    <tr>
+                        <td>24th</td>
+                        <td>25th <button class="buy_button" data-date="2026-04-25">Buy Now</button></td>
+                        <td>26th <button class="buy_button" data-date="2026-04-26">Buy Now</button></td>
+                        <td>27th <button class="buy_button" data-date="2026-04-27">Buy Now</button></td>
+                        <td>28th <button class="buy_button" data-date="2026-04-28">Buy Now</button></td>
+                        <td>29th <button class="buy_button" data-date="2026-04-29">Buy Now</button></td>
+                        <td>30th</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+            <form id="purchase_form">
+                <label for="name">Name: (required)</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                
+                <label for="email">Email: (required)</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="quantity">Ticket Quantity: (required)</label><br>
+                <input type="number" id="quantity" name="quantity" min="1" required><br><br>
+            
+                <label for="date">Visit Date: (required)</label><br>
+                <input type="date" id="visit_date" name="visit_date" required><br><br>
+                <button onclick="alert('Redirecting to Payment System')">Submit</button>
+
+            </form>
+        </main>
+
+        <figure class="main_figure"></figure>
+
+        <footer class="footer">
+            <p>&copy; 2026 MonoMuse. All rights reserved.</p>
+            <p id="copyYear"></p>
+        </footer>
+    </div>
+</body>
+</html>
