@@ -41,10 +41,10 @@ nav a:hover {
 }
 
 footer {
-    border-top: 1px solid rgba(245,245,247,.12);
+    border-top: 1px solid rgba(68, 60, 43, 0.617);
     padding: 18px 16px;
     text-align: center;
-    color: rgba(245,245,247,.72);
+    color: rgb(66, 61, 48);
 }
 
 th {
