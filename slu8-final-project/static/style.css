@@ -1,7 +1,7 @@
-* {
+body {
     padding: 5px;
     margin: 5px;
-    background: #ceba98;
+    background: #e7dac3;
     color:  #000000;
     font-family: Roboto, Arial, sans-serif;
     font-optical-sizing: auto;
@@ -10,7 +10,7 @@
 }
   
 #logo {
-    width: 18%;
+    width: 8%;
     display: block;
 }
   
@@ -220,3 +220,28 @@ grid-area: main;
   
 
 
+h1 {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #570807;
+    margin-bottom: 20px;
+}
+
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #232323;
+    margin-bottom: 15px;
+}
+
+
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: #232323;
+    margin-bottom: 10px;
+}
