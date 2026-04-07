@@ -1,24 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
-
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-    
-    <script src="../static/script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support MonoMuse</title>
     <link rel="stylesheet" href="../static/style.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols+2&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-   
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
 </head>
-<body>
+<body onload="addYear()">
     <div class="container">
-        <header class="header"> 
+        <header class="header">
             <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse Museum Logo"> 
         </header>
 
@@ -28,19 +21,56 @@
             <a href="exhibitions.html">Exhibitions</a>
             <a href="buytickets.html">Buy Tickets</a>
             <a href="supportus.html">Support Us</a>
-            <!-- Hamburger icon -->
             <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">☰</a>
         </nav>
 
         <main class="main">
             <h2>Support MonoMuse</h2>
+
+            <section>
+                <h3>Why Your Support Matters</h3>
+                <p>
+                    MonoMuse is dedicated to providing engaging exhibitions, educational programs, and community events that celebrate art and culture. Your support allows us to maintain and expand these initiatives for everyone to enjoy.
+                </p>
+            </section>
+
+            <section>
+                <h3>Donate</h3>
+                <p>
+                    Donations help fund special exhibitions, educational programs, and community outreach. Every contribution, large or small, makes a difference in helping us continue to inspire and educate.
+                </p>
+                <p>
+                    Consider becoming a recurring donor to make a lasting impact.
+                </p>
+            </section>
+
+            <section>
+                <h3>Become a Member</h3>
+                <p>
+                    Membership provides exclusive benefits such as free admission, early access to exhibitions, and invitations to members-only events. Your membership directly supports our mission and ensures a vibrant cultural experience for all.
+                </p>
+                <ul>
+                    <li>Basic Membership - $50/year</li>
+                    <li>Premium Membership - $100/year</li>
+                    <li>VIP Membership - $250/year</li>
+                </ul>
+                <p>
+                    Join our community and enjoy the perks of being a MonoMuse member.
+                </p>
+            </section>
+
+            <section>
+                <h3>Other Ways to Support</h3>
+                <p>
+                    Spread the word about MonoMuse, volunteer at events, or participate in fundraising campaigns. Every action helps us grow and reach more people.
+                </p>
+            </section>
         </main>
 
         <footer class="footer">
             <p id="copyYear"></p>
             <p>&copy; MonoMuse. All rights reserved.</p>
         </footer>
-
     </div>
 </body>
 </html>
