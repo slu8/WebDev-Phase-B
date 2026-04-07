@@ -12,7 +12,6 @@ body {
     line-height: 1.5;
 }
 
-/* ── CONTAINER ── */
 .container {
     display: grid;
     grid-template-areas:
@@ -24,14 +23,14 @@ body {
 
 
 
-/* ── NAV ── */
+
 .nav_bar {
     grid-area: nav_bar;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     gap: 10px;
-    background-color: rgb(174, 155, 122);
+    background-color: rgb(151, 132, 101);
     padding: 10px 20px;
 }
 
@@ -80,7 +79,7 @@ nav a:hover {
     align-self: flex-end;
 }
 
-/* ── MAIN ── */
+
 .main {
     grid-area: main;
     padding: 20px 50px;
@@ -90,7 +89,7 @@ nav a:hover {
     grid-area: main-img;
 }
 
-/* ── FOOTER ── */
+
 .footer {
     grid-area: footer;
     border-top: 1px solid rgba(68, 60, 43, 0.617);
@@ -119,7 +118,7 @@ nav a:hover {
     color: #7a4f2e;
 }
 
-/* ── TYPOGRAPHY ── */
+
 h1 {
     font-family: 'Cinzel Decorative', serif;
     font-size: 36px;
@@ -144,7 +143,7 @@ h3 {
     margin-bottom: 10px;
 }
 
-/* ── CTA BUTTON ── */
+
 .cta {
     background: #910e0c;
     border: none;
@@ -155,7 +154,7 @@ h3 {
     display: inline-block;
 }
 
-/* ── READ MORE/LESS ── */
+
 #readLess, #longIntro {
     display: none;
 }
@@ -166,7 +165,7 @@ h3 {
     cursor: pointer;
 }
 
-/* ── SLIDESHOW ── */
+
 .slideshow {
     grid-area: slideshow;
     position: relative;
@@ -251,7 +250,7 @@ h3 {
 
 .dot.active { background: white; }
 
-/* ── PLAN YOUR VISIT ── */
+
 .plan-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -260,7 +259,7 @@ h3 {
     align-items: start;
 }
 
-/* ── FEATURED EXHIBITS ── */
+
 .exhibits-section {
     margin-bottom: 40px;
 }
@@ -283,14 +282,14 @@ h3 {
     display: block;
 }
 
-/* ── MAP ── */
+
 #map {
     height: 400px;
     width: 100%;
     margin: 20px 0;
 }
 
-/* ── TABLES ── */
+
 th {
     padding-top: 12px;
     padding-bottom: 12px;
@@ -298,7 +297,7 @@ th {
 }
 
 tbody tr:nth-child(even) td {
-    background-color: #e6d8c8;
+    background-color: #ceba9879;
 }
 
 form * {
@@ -345,17 +344,23 @@ form * {
     background-color: #3e4a30;
 }
 
-/* ── PURCHASE FORM ── */
+
 #purchase_form {
     display: none;
     margin-top: 20px;
     padding: 15px;
     border: 1px solid #ccc;
     border-radius: 12px;
-    background-color: #f9f9f9;
+    background-color: #fef8f0;
 }
 
-/* ── EXPLORE PAGE ── */
+
+#total_price_line {
+    color: rgb(97, 11, 11);
+    font-weight: bold;
+}
+
+
 .explore-row {
     display: flex;
     gap: 40px;
@@ -411,7 +416,7 @@ form * {
         "footer";
     grid-template-rows: auto 220px auto auto;
 }
-/* ── MOBILE ── */
+
 @media only screen and (max-width: 650px) {
 
     .container {
@@ -453,5 +458,37 @@ form * {
     table {
         width: 100%;
         font-size: 14px;
+    }
+}
+.explore-row {
+    display: flex;
+    gap: 40px;
+}
+
+.explore-left {
+    flex: 1;
+}
+
+.explore-right {
+    flex: 1;
+}
+
+
+
+.two-column-text {
+    column-count: 2;
+    column-gap: 40px;
+}
+
+
+.two-column-text section {
+    break-inside: avoid;
+    margin-bottom: 20px;
+}
+
+
+@media only screen and (max-width: 650px) {
+    .two-column-text {
+        column-count: 1;
     }
 }

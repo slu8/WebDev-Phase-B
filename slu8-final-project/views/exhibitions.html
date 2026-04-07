@@ -16,11 +16,9 @@
 </head>
 <body onload="addYear()">
     <div class="container">
-        <header class="header">
-            <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse Museum Logo"> 
-        </header>
 
         <nav class="nav_bar">
+            <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse Museum Logo">
             <a href="../index.html">Home</a>
             <a href="explore.html">Explore</a>
             <a href="exhibitions.html">Exhibitions</a>
@@ -31,11 +29,39 @@
         </nav>
 
         <main class="main">
-            <h3>Exhibition 1: Digital Dreams: Art in the Age of Algorithms</h2>
-                <p>This exhibition explores how artists are using algorithms, artificial intelligence, and generative tools to create new forms of digital expression. Through interactive displays and dynamic visuals, visitors can see how machines and human creativity work together to produce art that evolves in real time.</p>
-            
-            <h3>Exhibition 2: Code & Canvas: The Language of Creative Technology</h3>
-                <p>Code & Canvas highlights the ways programming has become a medium for artistic creation. Featuring works by digital artists and designers, the exhibition showcases installations, projections, and interactive pieces that reveal how lines of code can transform into immersive visual experiences.</p>
+
+            <div class="explore-row">
+                <div class="explore-left">
+                    <h3>Exhibition 1: Digital Dreams: Art in the Age of Algorithms</h3>
+                    <p>
+                        This exhibition explores how artists are using algorithms, artificial intelligence, 
+                        and generative tools to create new forms of digital expression. Through interactive 
+                        displays and dynamic visuals, visitors can see how machines and human creativity 
+                        work together to produce art that evolves in real time.
+                    </p>
+                </div>
+                <div class="explore-right">
+                    <img src="../static/exhibit1.jpg" alt="Digital Dreams Exhibit" class="explore-img">
+                </div>
+            </div>
+        
+            <hr class="section-divider">
+        
+            <div class="explore-row">
+                <div class="explore-left">
+                    <h3>Exhibition 2: Code & Canvas: The Language of Creative Technology</h3>
+                    <p>
+                        Code & Canvas highlights the ways programming has become a medium for artistic 
+                        creation. Featuring works by digital artists and designers, the exhibition showcases 
+                        installations, projections, and interactive pieces that reveal how lines of code can 
+                        transform into immersive visual experiences.
+                    </p>
+                </div>
+                <div class="explore-right">
+                    <img src="../static/exhibit2.png" alt="Code and Canvas Exhibit" class="explore-img">
+                </div>
+            </div>
+        
         </main>
         
         <footer class="footer">

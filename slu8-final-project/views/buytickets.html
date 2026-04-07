@@ -14,11 +14,9 @@
 </head>
 <body onload="addYear()">
     <div class="container">
-        <header class="header">
-            <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse Museum Logo"> 
-        </header>
 
         <nav class="nav_bar">
+            <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse Museum Logo">
             <a href="../index.html">Home</a>
             <a href="explore.html">Explore</a>
             <a href="exhibitions.html">Exhibitions</a>
@@ -141,24 +139,36 @@
                 <label for="quantity">Ticket Quantity: (required)</label><br>
                 <input type="number" id="quantity" name="quantity" min="1" required><br><br>
             
-                <!-- Optional Zip Code -->
-                <label for="zip">Zip Code (optional)</label><br>
+                <label for="zip">Zip Code (optional, 00000)</label><br>
                 <input type="text" id="zip" name="zip" pattern="\d{5}" maxlength="5"><br><br>
 
-                <!-- Join Mailing List -->
+                <label for="phone">Phone Number: (required)</label><br>
+                <input type="tel" id="phone" name="phone" pattern="\d{3}-\d{3}-\d{4}" placeholder="000-000-0000" required><br><br>
+               
                 <label><input type="checkbox" id="mailing_list"> Join our mailing list</label><br><br>
 
-                <!-- Total Price Display -->
-                <p>Total Price: $<span id="total_price">18</span></p>
+                <p id="total_price_line">Total Price: $<span id="total_price">18</span></p>
 
+                
                 <label for="date">Visit Date: (required)</label><br>
                 <input type="date" id="visit_date" name="visit_date" required><br><br>
                 <button type="submit">Place Order</button>
 
             </form>
-        </main>
 
-        <figure class="main_figure"></figure>
+
+            <h3>Hours</h3>
+                <ul>
+                    <li>Closed on weekends</li>
+                    <li>Open weekdays from 10am-8pm</li>
+                </ul>
+            <h3>FAQs</h3>
+                <ul>
+                    <li><strong>Do I need to purchase tickets in advance?</strong><br>While tickets can be purchased at the door, we recommend buying them online in advance to guarantee entry, especially during peak hours.</li>
+                    <li><strong>What types of tickets are available?</strong><br>Monomuse offers general admission, student, senior, and group tickets. Special pricing may be available for children and members.</li>
+                    <li><strong>Can I change or cancel my ticket?</strong><br>Tickets are non-refundable, but date changes may be allowed depending on availability. Please contact support for assistance.</li>
+                </ul>
+        </main>
 
         <footer class="footer">
             <p id="copyYear"></p>
