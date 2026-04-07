@@ -3,6 +3,11 @@
 <head>
     <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
 
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+<!-- Leaflet JS (before your script.js) -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
     <script src="../static/script.js" defer></script>
     <link rel="stylesheet" href="../static/style.css">
 
@@ -25,6 +30,8 @@
             <a href="explore.html">Explore</a>
             <a href="exhibitions.html">Exhibitions</a>
             <a href="buytickets.html">Buy Tickets</a>
+            <!-- Hamburger icon -->
+            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">☰</a>
         </nav>
 
         <main class="main">
@@ -39,6 +46,16 @@
             </ul>
         </main>
         
+
+        <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/MHo928fd2wE"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+
+
         <footer class="footer">
             <p>&copy; 2026 MonoMuse. All rights reserved.</p>
             <p id="copyYear"></p>

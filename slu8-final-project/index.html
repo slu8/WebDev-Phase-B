@@ -5,6 +5,9 @@
     <script src="./static/script.js" defer></script>
     <link rel="stylesheet" href="./static/style.css">
     
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols+2&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -30,6 +33,8 @@
             <a href="views/explore.html">Explore</a>
             <a href="views/exhibitions.html">Exhibitions</a>
             <a href="views/buytickets.html">Buy Tickets</a>
+            <!-- Hamburger icon -->
+            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">☰</a>
         </nav>
 
         <main class="main">
@@ -45,9 +50,11 @@
                     Whether you’re an art aficionado, a history enthusiast, or simply seeking inspiration, Monomuse provides a unique space to experience the stories and emotions behind each work. From guided tours to hands-on workshops, the museum invites visitors to engage, learn, and connect with culture in a dynamic, modern setting.</p>
                 <span id="readLess">Read Less</span>
             </div>
-            
+            <div id="map"></div>  
         </main>
 
+
+        
         
         <footer class="footer">
             <p id="copyYear"></p>
