@@ -16,45 +16,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body onload="addYear()">
-    <div class="container">
-        <header class="header"> 
-            <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse Museum Logo"> 
-        </header>
+<body style="margin:0; padding:0;" onload="addYear()">
+        <div class="container">
 
         <nav class="nav_bar">
+            <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse Museum Logo">
             <a href="../index.html">Home</a>
             <a href="explore.html">Explore</a>
             <a href="exhibitions.html">Exhibitions</a>
             <a href="buytickets.html">Buy Tickets</a>
             <a href="supportus.html">Support Us</a>
-            <!-- Hamburger icon -->
             <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">☰</a>
         </nav>
-
+    
         <main class="main">
-            <div>
-                <h2>Mission Statement</h2>
-                <p>Monomuse is dedicated to exploring the evolving relationship between art, technology, and society. Our mission is to inspire curiosity and creativity by showcasing innovative exhibitions that highligh how digital tools, emerging technologies, and human imagination shape the future of artistic expression.</p>
-            
-            
+    
+            <!-- Mission + Milestones -->
+            <div class="explore-row">
+                <div class="explore-left">
+                    <h2>Mission Statement</h2>
+                    <p>Monomuse is dedicated to exploring the evolving relationship between art, technology, and society. Our mission is to inspire curiosity and creativity by showcasing innovative exhibitions that highlight how digital tools, emerging technologies, and human imagination shape the future of artistic expression.</p>
+                </div>
+                <div class="explore-right">
+                    <h2>Milestones</h2>
+                    <ul>
+                        <li>2023: Expansion of the museum space and launch of international artist collaborations.</li>
+                        <li>2018: Launch of the Interactive Media Lab, allowing visitors to experiment with creative coding.</li>
+                        <li>2016: MonoMuse opens its doors with its first exhibition on digital storytelling.</li>
+                    </ul>
+                </div>
             </div>
-                <h3>Milestones</h3>
-                <ul>
-                    <li>2023: Expansion of the museum space and launch of international artist collaborations.</li>
-                    <li>2018: Launch of the Interactive Media Lab, allowing visitors to experiment with creative coding.</li>
-                    <li>2016: MonoMuse opens its doors with its first exhibition on digital storytelling.</li>
-                </ul>
-        </main>
+    
+            <hr class="section-divider">
+    
+            <!-- Gift Shop -->
+            <div class="explore-row">
+                <div class="explore-left">
+                    <h2>Gift Shop: Bring A Piece of MonoMuse Home</h2>
+                    <p>Take the inspiration of Monomuse with you through our thoughtfully curated gift shop. From art-inspired prints and unique souvenirs to handcrafted items and exclusive merchandise, each piece reflects the creativity and spirit of the museum.</p>
+                </div>
+                <div class="explore-right">
+                    <img src="../static/giftshop.png" alt="Gift Shop" class="explore-img">
+                </div>
+            </div>
+    
+            <hr class="section-divider">
+    
+            <!-- Parking -->
+            <div class="explore-row">
+                <div class="explore-left">
+                    <h2>Parking</h2>
+                    <p>Convenient parking is available for all Monomuse visitors. Guests can access our on-site parking garage, as well as nearby public lots and street parking within walking distance. Accessible parking spaces are available, and signage throughout the area makes it easy to find your way to the museum entrance.</p>
+                </div>
+                <div class="explore-right">
+                    <div class="parking-block">
+                        <p><strong>Monomuse Main Garage</strong></p>
+                        <p>Located directly beneath the museum for easy access.</p>
+                        <ul>
+                            <li>$5 (first hour)</li>
+                            <li>$3 each additional hour</li>
+                            <li>$18 daily maximum</li>
+                        </ul>
+                    </div>
+                    <div class="parking-block">
+                        <p><strong>Riverfront Parking Deck</strong></p>
+                        <p>A short 3-minute walk with scenic views.</p>
+                        <ul>
+                            <li>$4 (first hour)</li>
+                            <li>$2 each additional hour</li>
+                            <li>$15 daily maximum</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    
+       
+
+            <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/MHo928fd2wE"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        
         
 
-        <iframe width="560" height="315"
-            src="https://www.youtube.com/embed/MHo928fd2wE"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-        </iframe>
+        </main>
 
 
         <footer class="footer">
