@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MonoMuse - Confirmation</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse Museum Logo">
+    </header>
+
+    <main class="main">
+        <h2>Order Confirmation</h2>
+        <p>Thank you for your order! Here are your order details:</p>
+        <ul>
+            <li>Ticket Type: <span id="ticket_type"></span></li>
+            <li>Quantity: <span id="quantity"></span></li>
+            <li>Visit Date: <span id="date"></span></li>
+            <li>Email: <span id="email"></span></li>
+            <li>Zip Code: <span id="zip"></span></li>
+            <li>Mailing List: <span id="mailing"></span></li>
+            <li>Total Cost: $<span id="total"></span></li>
+        </ul>
+    </main>
+</div>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+document.getElementById('ticket_type').textContent = params.get('ticket');
+document.getElementById('quantity').textContent = params.get('quantity');
+document.getElementById('date').textContent = params.get('date');
+document.getElementById('email').textContent = params.get('email');
+document.getElementById('zip').textContent = params.get('zip') || 'N/A';
+document.getElementById('mailing').textContent = params.get('mailing');
+document.getElementById('total').textContent = params.get('total');
+</script>
+
+</body>
+</html>

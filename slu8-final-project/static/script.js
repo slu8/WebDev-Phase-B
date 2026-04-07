@@ -150,3 +150,66 @@ if (typeof L !== "undefined" && document.getElementById("map")) {
     // Add a marker
     var marker = L.marker([51.5, -0.09]).addTo(map);
 }
+
+
+
+
+
+const ticketPrices = { "Adult": 18, "Student": 10, "Member": 15 };
+
+function updateTotal() {
+    const type = $('#ticket_type').val() || "Adult";
+    const qty = parseInt($('#quantity').val()) || 1;
+    const price = ticketPrices[type] || 18;
+    $('#total_price').text(price * qty);
+}
+
+$('#ticket_type, #quantity').on('change keyup', updateTotal);
+
+$('#purchase_form').submit(function(e){
+    e.preventDefault();
+    let valid = true;
+
+    // Clear previous error styles
+    $('.error').remove();
+
+    // Validate required fields
+    if(!$('#ticket_type').val()) {
+        $('#ticket_type').after('<span class="error">Please select a ticket type.</span>');
+        valid = false;
+    }
+    if(!$('#quantity').val() || $('#quantity').val() < 1 || $('#quantity').val() > 10) {
+        $('#quantity').after('<span class="error">Quantity must be 1–10.</span>');
+        valid = false;
+    }
+    if(!$('#visit_date').val()) {
+        $('#visit_date').after('<span class="error">Please select a visit date.</span>');
+        valid = false;
+    }
+    if(!$('#email').val() || !/\S+@\S+\.\S+/.test($('#email').val())) {
+        $('#email').after('<span class="error">Please enter a valid email.</span>');
+        valid = false;
+    }
+    if($('#zip').val() && !/^\d{5}$/.test($('#zip').val())) {
+        $('#zip').after('<span class="error">Zip must be 5 digits.</span>');
+        valid = false;
+    }
+
+    if(!valid) return;
+
+    // Redirect to confirmation page with query params
+    const total = $('#total_price').text();
+    const params = $.param({
+        ticket: $('#ticket_type').val(),
+        quantity: $('#quantity').val(),
+        date: $('#visit_date').val(),
+        email: $('#email').val(),
+        zip: $('#zip').val(),
+        mailing: $('#mailing_list').is(':checked') ? 'Yes' : 'No',
+        total: total
+    });
+    window.location.href = 'confirmation.html?' + params;
+});
+
+updateTotal();
+

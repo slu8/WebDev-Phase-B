@@ -23,13 +23,14 @@
             <a href="explore.html">Explore</a>
             <a href="exhibitions.html">Exhibitions</a>
             <a href="buytickets.html">Buy Tickets</a>
+            <a href="supportus.html">Support Us</a>
             <!-- Hamburger icon -->
              <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">☰</a>
         </nav>
         
         <main class="main">
             <h2>Ticket Types</h2>
-            <table id="ticket_type">
+            <table id="ticket_type_table">
                 <thead>
                     <tr>
                         <th>Ticket Type</th>
@@ -121,18 +122,38 @@
 
 
             <form id="purchase_form">
+                <h3>Order Form</h3>
                 <label for="name">Name: (required)</label><br>
                 <input type="text" id="name" name="name" required><br><br>
                 
                 <label for="email">Email: (required)</label><br>
                 <input type="email" id="email" name="email" required><br><br>
                 
+                <label for="ticket_type">Ticket Type: (required)</label><br>
+                
+                <select id="ticket_type" name="ticket_type" required>
+                    <option value="">Select ticket type</option>
+                    <option value="Adult">Adult</option>
+                    <option value="Student">Student</option>
+                    <option value="Member">Member</option>
+                </select><br><br>
+
                 <label for="quantity">Ticket Quantity: (required)</label><br>
                 <input type="number" id="quantity" name="quantity" min="1" required><br><br>
             
+                <!-- Optional Zip Code -->
+                <label for="zip">Zip Code (optional)</label><br>
+                <input type="text" id="zip" name="zip" pattern="\d{5}" maxlength="5"><br><br>
+
+                <!-- Join Mailing List -->
+                <label><input type="checkbox" id="mailing_list"> Join our mailing list</label><br><br>
+
+                <!-- Total Price Display -->
+                <p>Total Price: $<span id="total_price">18</span></p>
+
                 <label for="date">Visit Date: (required)</label><br>
                 <input type="date" id="visit_date" name="visit_date" required><br><br>
-                <button onclick="alert('Redirecting to Payment System')">Submit</button>
+                <button type="submit">Place Order</button>
 
             </form>
         </main>
@@ -140,8 +161,8 @@
         <figure class="main_figure"></figure>
 
         <footer class="footer">
-            <p>&copy; 2026 MonoMuse. All rights reserved.</p>
             <p id="copyYear"></p>
+            <p>&copy; MonoMuse. All rights reserved.</p>
         </footer>
     </div>
 </body>

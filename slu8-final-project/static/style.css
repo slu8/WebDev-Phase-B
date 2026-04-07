@@ -144,11 +144,11 @@ grid-area: main;
     background-color: #f9f9f9;
 }
 
-#ticket_type {
+#ticket_type_table {
     border: 1px solid #85716a;
 }
 
-#ticket_type th, #ticket_type td {
+#ticket_type_table th, #ticket_type td {
     border: 1px solid #353030;
     padding: 10px;
 }

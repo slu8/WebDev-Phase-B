@@ -150,3 +150,5 @@ if (typeof L !== "undefined" && document.getElementById("map")) {
     // Add a marker
     var marker = L.marker([51.5, -0.09]).addTo(map);
 }
+
+
